@@ -1,25 +1,69 @@
-body {
-    background-image: url(img/1162775.jpg);
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
+
+  /* -------------------------------------------------------------------------------------------------------------------------------------------- */
+  html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:10 5 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:20%;
+    transform:translate(-50%, -50%);
   }
   
   h1 {
-    font-size: 5rem;
-    color: #DBEDF3;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-family: 'Redressed', cursive;
-    text-shadow: 3px 0 #DA0463;
-  
+    font-family:monospace;
   }
   
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------   */
   footer {
-    color: #DBEDF3;
+    color: black;
+    size: 50px;
+    font-size: 30px;
     font-family:cursive;
     text-align: center;
+    padding-top: 10rem;
   }
   
   .w {
@@ -52,6 +96,8 @@ body {
   
   .set {
     margin: 10% auto;
+    margin-left: 20%;
+    margin-top: 20%;
   }
   
   .pressed {
@@ -80,4 +126,3 @@ body {
     margin: 10px;
     background-color: white;
   }
-  
